@@ -3,17 +3,20 @@ import numpy as np
 import os
 from filters import PencilSketch
 
+m = 240
+n = 320
+DIR_PATH = 'ZuBuD'
+SKETCH_PATH = 'ZuBuD_Sketch'
 
-for file in os.listdir('ZuBuD'):
-    file_path = os.path.join('ZuBuD', file)
+for file in os.listdir(DIR_PATH):
+    file_path = os.path.join(DIR_PATH, file)
     img = cv.imread(file_path)
     img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
-    print (img.shape)
     height, width, channels = img.shape
-    if (height, width, channels) == (240,320,3):
-	    img = np.resize(img, (480, 640, 3))
+    if (height, width, channels) != (m, n, 3):
+	    img = np.resize(img, (m, n, 3))
     pencil = PencilSketch(width, height)
     sketch = pencil.render(img)
-    write_path = os.path.join('ZuBuD_Sketch', file)
+    write_path = os.path.join(SKETCH_PATH, file)
     cv.imwrite(write_path, sketch)
     
