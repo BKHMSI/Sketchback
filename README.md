@@ -1,5 +1,5 @@
 # Sketchback: Convolutional Sketch Inversion using Keras
-Implementation of sketch inversion using deep convolution neural networks (_synthesising photo-realistic images from pencil sketches_) following the work of [Convolutional Sketch Inversion][conv_paper] and [Scribbler][scribbler]. 
+Keras implementation of sketch inversion using deep convolution neural networks (_synthesising photo-realistic images from pencil sketches_) following the work of [Convolutional Sketch Inversion][conv_paper] and [Scribbler][scribbler]. 
 
 We focused on sketches of human faces and architectural drawings of buildings. However according to [Scribbler][scribbler] and our experimentation with their proposed framework, we believe that given a large dataset and ample training time, this network could generalize to other categories as well. 
 
@@ -7,13 +7,26 @@ We trained the model using a dataset generated from a large database of face ima
 
 ## Results
 ### Faces
-<p align="center" width="500" height="165"><img src="Examples/faces_1.png"></p>
-<p align="center" width="500" height="165"><img src="Examples/faces_2.png"></p>
-<p align="center" width="500" height="165"><img src="Examples/faces_4.png"></p>
+<table>
+<tr>
+<td><p align="center" width="500" height="165"><img src="Examples/faces_1.png"></p></td>
+<td><p align="center" width="500" height="165"><img src="Examples/faces_2.png"></p></td>
+</tr><tr>
+<td><p align="center" width="500" height="165"><img src="Examples/faces_3.png"></p></td>
+<td><p align="center" width="500" height="165"><img src="Examples/faces_4.png"></p></td>
+</tr>
+</table>
 
 ### Buildings
-<p align="center"><img src="Examples/building_7.png"></p>
-<p align="center"><img src="Examples/building_9.png"></p>
+<table>
+<tr>
+<td><p align="center"><img src="Examples/building_7.png"></p></td>
+<td><p align="center"><img src="Examples/building_8.png"></p></td>
+</tr><tr>
+<td><p align="center"><img src="Examples/building_9.png"></p></td>
+<td><p align="center"><img src="Examples/coliseum.png"></p></td>
+</tr>
+</table>
 
 ## Datasets
 We used the following datasets to train, validate and test our model:
@@ -33,6 +46,7 @@ Furthermore, due to the low number of images of buildings available, we applied 
 ## Network Architecture 
 
 <p align="center"><img src="Examples/scibbler_architecture.png"></p>
+
 We used the network architecture used in [Scribbler][scribbler]. The generator follows an encoder-decoder design, with down-sampling steps, followed by residual layers, followed by up-sampling steps.
 
 ## Loss Functions 
