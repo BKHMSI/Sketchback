@@ -9,22 +9,24 @@ We trained the model using a dataset generated from a large database of face ima
 ### Faces
 <table>
 <tr>
-<td><p align="center" width="500" height="165"><img src="Examples/faces_1.png"></p></td>
-<td><p align="center" width="500" height="165"><img src="Examples/faces_2.png"></p></td>
-</tr><tr>
-<td><p align="center" width="500" height="165"><img src="Examples/faces_3.png"></p></td>
-<td><p align="center" width="500" height="165"><img src="Examples/faces_4.png"></p></td>
+<td align="center"><img src="Examples/faces_1.png"></td>
+<td align="center"><img src="Examples/faces_2.png"></td>
+</tr>
+<tr>
+<td align="center"><img src="Examples/faces_3.png"></td>
+<td align="center"><img src="Examples/faces_4.png"></td>
 </tr>
 </table>
 
 ### Buildings
 <table>
 <tr>
-<td><p align="center"><img src="Examples/building_7.png"></p></td>
-<td><p align="center"><img src="Examples/building_8.png"></p></td>
-</tr><tr>
-<td><p align="center"><img src="Examples/building_9.png"></p></td>
-<td><p align="center"><img src="Examples/coliseum.png"></p></td>
+<td align="center"><img src="Examples/building_7.png"></td>
+<td align="center"><img src="Examples/building_8.png"></td>
+</tr>
+<tr>
+<td align="center"><img src="Examples/building_9.png"></td>
+<td align="center"><img src="Examples/coliseum.png"></td>
 </tr>
 </table>
 
@@ -35,7 +37,7 @@ We used the following datasets to train, validate and test our model:
 - [*CUHK Face Sketch (CUFS) database*][cuhk]. This dataset contains 188 hand-drawn face sketches and their corresponding photographs. We used the CUHK student database for testing our model.
 - We finally used various building sketches from *Google Images* for testing
 
-# Sketching
+## Sketching
 The datasets were simulated, i.e. the sketches were generated, using the following methods (with the exception of the CUHK dataset, which contains sketches and the corresponding images)
 - [Pencil Sketchify][pencil]
 - [XDoG (Extended Difference of Gaussians)][xdog] 
