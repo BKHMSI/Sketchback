@@ -105,5 +105,5 @@ MIT
 [tool]: <https://codebox.net/pages/image-augmentation-with-python>
 [conv_paper]: <https://arxiv.org/abs/1606.03073>
 [scribbler]: <https://arxiv.org/abs/1612.00835>
-[w1]: <https://drive.google.com/file/d/0B-HY3igdAAMNemRpZHc2SkVIV2s/view?usp=sharing>
-[w2]: <https://drive.google.com/file/d/0B-HY3igdAAMNajljMGVObDJwOTA/view?usp=sharing>
+[w1]: <https://drive.google.com/file/d/0B-HY3igdAAMNemRpZHc2SkVIV2s/view?usp=sharing&resourcekey=0-anL_CnHx-DdP_3MyVrbvTw>
+[w2]: <https://drive.google.com/file/d/0B-HY3igdAAMNajljMGVObDJwOTA/view?usp=sharing&resourcekey=0-teGLF_8D5JZlgXvuGIWeuQ>
